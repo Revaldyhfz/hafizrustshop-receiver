@@ -86,4 +86,14 @@ This is the place for you to write reflections:
 
 #### Reflection Subscriber-1
 
+1. RwLock<> allows concurrent reads and exclusive writes, balancing between parallelism and exclusivity, unlike Mutex<>.
+
+2. Rust prioritizes safety and thread-safety by disallowing mutation of static variables it makes our code easier to understand and maintain
+
 #### Reflection Subscriber-2
+
+1. ive explore some parts of the program, specifically lib.rs, it manages the app configs, initializes an HTTP client and some costum errors
+
+2. it makes it easy since adding new subscribers doesn't require to change the publisher code, but scaling multiple instances of the main app might require additional coordination or configuration
+
+3. no i havent made any tests (individual)
